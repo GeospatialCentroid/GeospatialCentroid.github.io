@@ -1,10 +1,12 @@
-## Welcome to GitHub Pages
+## Welcome to the Centroid Share Site
 
-You can use the [editor on GitHub](https://github.com/GeospatialCentroid/GeospatialCentroid.github.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
+This resource is available to host temporary content so we don't have to upload and email files to project partners, so they can download and view them. Instead we will upload here and share a link. I expect the primary use case of this resources will be htmls derived from rmd workflows.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Please direct any questions to dan at carverd@colostate.edu
 
-### Markdown
+## Active Project Material
+
+### Enviroscreen
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
