@@ -1,6 +1,6 @@
 ## Welcome to the Centroid Share Site
 
-This resource is available to host temporary content so we don't have to upload and email files to project partners, so they can download and view them. Instead we will upload here and share a link. I expect the primary use case of this resources will be htmls derived from rmd workflows.
+This resource is available to host temporary content so we don't have to upload and email files to each other.
 
 Please direct any questions to dan at carverd@colostate.edu
 
@@ -8,12 +8,10 @@ Please direct any questions to dan at carverd@colostate.edu
 
 ### Enviroscreen
 
-[map example](https://geospatialcentroid.github.io/docs/mapExample.html)
+**Question - 2021-11-11**
 
-The primary map elements is the cholopleth. It's important that the popup remains accessible.
+In the following map, [map example](https://geospatialcentroid.github.io/docs/mapExample.html), how can we visualize both the primary map element (cholopleth) and the reference information(oil and gas communities...)
 
-I need to figure out a means showing the other information without loosing access to the cholopleth content.
-
-any recommendations or thoughts are appreciated.
-
- 
+We need to maintain access to the popup information on the cholopleth object...so layering options are a bit tricky.
+Any recommendations or thoughts are appreciated.
+Dan 
