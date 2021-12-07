@@ -28,7 +28,7 @@ Draft versions of Enviroscreen score as of 2021-12-06
 [map](https://geospatialcentroid.github.io/enviroscreen/countyMap.html)
 
 #### Census Tract  
-[map](https://geospatialcentroid.github.io/enviroscreen/censusTrackMap.html)
+[map](https://geospatialcentroid.github.io/enviroscreen/censusTractMap.html)
 
 
 #### Census Block Groups
