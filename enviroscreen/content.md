@@ -1,7 +1,7 @@
 
 
 ## Enviroscreen share site
-Hello, this site is for the temperary hosting if parliminary information connected to the Colorado Enviroscreen project.
+Hello, this site is for the temporary hosting if preliminary information connected to the Colorado Enviroscreen project.
 <br>
 For more information regarding the larger project please visit the project [website](https://cdphe.colorado.gov/enviroscreen) or the project [github](https://github.com/GeospatialCentroid/Colorado-EnviroScreen).
 
@@ -13,26 +13,26 @@ Draft versions of Enviroscreen score as of 2021-12-06
 **Known issues**
 
 - Coal Community, Rural, Oil Community are generated using random data
-- The visualization of these features will be changes to unique symbol (vertical, hortizontal, diagonal lines) the transparency/color can be adjusted.
+- The visualization of these features will be changes to unique symbol (vertical, horizontal, diagonal lines) the transparency/color can be adjusted.
 
 - DI communities are not included at the moment.
 
 **Questions to consider**
 
-- Do you like being able to add the addational layers as map features rather then selecting from from ourside the map?
-- How's the color scheme? Addational color options can be explore [here](https://colorbrewer2.org/#type=sequential&scheme=BuGn&n=3)
+- Do you like being able to add the additional layers as map features rather then selecting them from outside the map?
+- How's the color scheme? Additional color options can be explore [here](https://colorbrewer2.org/#type=sequential&scheme=BuGn&n=3)
 - There is a transparency on the indicator score to help the reference of the base map come through. This comes at the cost of
 - Did you have any luck with the search functionality?  
 
 #### County
-[map]("https://geospatialcentroid.github.io/enviroscreen/countyMap.html")
+[map]("/countyMap.html")
 
 #### Census Tract  
-[map]("https://geospatialcentroid.github.io/enviroscreen/censusTrackMap.html")
+[map]("/censusTrackMap.html")
 
 
 #### Census Block Groups
-[map]("https://geospatialcentroid.github.io/enviroscreen/censusBlockGroupMap.html")
+[map]("/censusBlockGroupMap.html")
 
 
 ### Old Content
