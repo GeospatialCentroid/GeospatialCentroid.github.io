@@ -25,14 +25,14 @@ Draft versions of Enviroscreen score as of 2021-12-06
 - Did you have any luck with the search functionality?  
 
 #### County
-[map]("/countyMap.html")
+[map](https://geospatialcentroid.github.io/enviroscreen/countyMap.html)
 
 #### Census Tract  
-[map]("/censusTrackMap.html")
+[map](https://geospatialcentroid.github.io/enviroscreen/censusTrackMap.html)
 
 
 #### Census Block Groups
-[map]("/censusBlockGroupMap.html")
+[map](https://geospatialcentroid.github.io/enviroscreen/censusBlockGroupMap.html)
 
 
 ### Old Content
