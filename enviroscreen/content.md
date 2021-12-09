@@ -10,14 +10,23 @@ For more information regarding the larger project please visit the project [webs
 
 Draft versions of Enviroscreen score as of 2021-12-06
 
-#### Data for all map features
+
+## Review
+
+Please provide all comments on the [share doc](https://docs.google.com/document/d/1spdqLdyO7Yq3-OR9cIsTSPYNR1Vj9zFjoAHYo8gqZ94/edit?usp=sharing)
+
+## Data for all map features
 
 The tables visualized here will function similarly to those in the shiny application.
 **note: the tremendous width of the table is something that will be addressed.**
 I'm experimenting with the download functionality and I can provide the original data file if needed.
+
+<br>
+
 [data tables](https://geospatialcentroid.github.io/enviroscreen/generateScoreTables.html))
 
 ## Maps
+
 Each map has some unique elements to it to provide a variety of options for discussion.
 
 #### County
