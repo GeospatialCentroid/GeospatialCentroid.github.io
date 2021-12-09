@@ -10,30 +10,37 @@ For more information regarding the larger project please visit the project [webs
 
 Draft versions of Enviroscreen score as of 2021-12-06
 
-**Known issues**
+#### Data for all map features
 
-- Coal Community, Rural, Oil Community are generated using random data
-- The visualization of these features will be changes to unique symbol (vertical, horizontal, diagonal lines) the transparency/color can be adjusted.
+The tables visualized here will function similarly to those in the shiny application.
+**note: the tremendous width of the table is something that will be addressed.**
+I'm experimenting with the download functionality and I can provide the original data file if needed.
+[data tables](https://geospatialcentroid.github.io/enviroscreen/generateScoreTables.html))
 
-- DI communities are not included at the moment.
-
-**Questions to consider**
-
-- Do you like being able to add the additional layers as map features rather then selecting them from outside the map?
-- How's the color scheme? Additional color options can be explore [here](https://colorbrewer2.org/#type=sequential&scheme=BuGn&n=3)
-- There is a transparency on the indicator score to help the reference of the base map come through. This comes at the cost of
-- Did you have any luck with the search functionality?  
+## Maps
+Each map has some unique elements to it to provide a variety of options for discussion.
 
 #### County
+
 [map](https://geospatialcentroid.github.io/enviroscreen/countyMap.html)
 
+- divergent color scale
+- includes oil, rural, and coal communities layers **these are not included in other maps
+- darker outline highlighting
+
 #### Census Tract  
+
 [map](https://geospatialcentroid.github.io/enviroscreen/censusTractMap.html)
 
+- single color scale; 9 color groups
 
 #### Census Block Groups
+
 [map](https://geospatialcentroid.github.io/enviroscreen/censusBlockGroupMap.html)
 
+- single color scale; 5 groups
+- showcases indicator (ozone) rather then enviroscreen score as it is a more consistent distribution.
 
 ### Old Content
+
 none at the moment

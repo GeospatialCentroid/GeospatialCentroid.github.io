@@ -6,19 +6,13 @@ Please direct any questions to dan at carverd@colostate.edu
 
 ## Active Project Material
 
+### Enviroscreen
+
+map and data for the project can be found [here](https://geospatialcentroid.github.io/enviroscreen/content)
+
+
 ### Survey Results
 
  > Results from GIS day survey
 
-[view results here](https://geospatialcentroid.github.io/docs/GeospatialTrainingSurvey.html) 
-
-
-### Enviroscreen
-
-**Question - 2021-11-11**
-
-In the following map, [map example](https://geospatialcentroid.github.io/docs/mapExample.html), how can we visualize both the primary map element (cholopleth) and the reference information(oil and gas communities...)
-
-We need to maintain access to the popup information on the cholopleth object...so layering options are a bit tricky.
-Any recommendations or thoughts are appreciated.
-Dan
+[view results here](https://geospatialcentroid.github.io/docs/GeospatialTrainingSurvey.html)
