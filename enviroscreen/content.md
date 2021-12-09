@@ -18,12 +18,11 @@ Please provide all comments on the [share doc](https://docs.google.com/document/
 ## Data for all map features
 
 The tables visualized here will function similarly to those in the shiny application.
-**note: the tremendous width of the table is something that will be addressed.**
+*note: the tremendous width of the table is something that will be addressed.*
+
 I'm experimenting with the download functionality and I can provide the original data file if needed.
 
-<br>
-
-[data tables](https://geospatialcentroid.github.io/enviroscreen/generateScoreTables.html))
+[data tables](https://geospatialcentroid.github.io/enviroscreen/generateScoreTables.html)
 
 ## Maps
 
