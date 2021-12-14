@@ -1,9 +1,11 @@
-
-
-## Enviroscreen share site
+# Enviroscreen share site
 Hello, this site is for the temporary hosting if preliminary information connected to the Colorado Enviroscreen project.
 <br>
-For more information regarding the larger project please visit the project [website](https://cdphe.colorado.gov/enviroscreen) or the project [github](https://github.com/GeospatialCentroid/Colorado-EnviroScreen).
+For more information regarding the larger project please visit the project
+<a href="https://cdphe.colorado.gov/enviroscreen" target="_blank">website</a>
+or the project
+<a href="https://github.com/GeospatialCentroid/Colorado-EnviroScreen" target="_blank">github</a>
+
 
 
 ### Current Content
@@ -12,8 +14,8 @@ Draft versions of Enviroscreen score as of 2021-12-06
 
 
 ## Review
+Please provide all comments on the  <a href="https://docs.google.com/document/d/1spdqLdyO7Yq3-OR9cIsTSPYNR1Vj9zFjoAHYo8gqZ94/edit?usp=sharing" target="_blank">shared doc</a>
 
-Please provide all comments on the [share doc](https://docs.google.com/document/d/1spdqLdyO7Yq3-OR9cIsTSPYNR1Vj9zFjoAHYo8gqZ94/edit?usp=sharing)
 
 I've provided reply to recommend actions and included a new list questions for the second version of these features.
 
@@ -31,19 +33,19 @@ Current version 2021-12-14
 
 #### County
 
-[map](https://geospatialcentroid.github.io/enviroscreen/countyMap.html)
+<a href="https://geospatialcentroid.github.io/enviroscreen/countyMap.html" target="_blank">map</a>
 
 - ozone
 
 #### Census Tract  
 
-[map](https://geospatialcentroid.github.io/enviroscreen/censusTractMap.html)
+<a href="https://geospatialcentroid.github.io/enviroscreen/censusTractMap.html" target="_blank">map</a>
 
 - Colorado.Enviroscreen.Score
 
 #### Census Block Groups
 
-[map](https://geospatialcentroid.github.io/enviroscreen/censusBlockGroupMap.html)
+<a href="https://geospatialcentroid.github.io/enviroscreen/censusBlockGroupMap.html" target="_blank">map</a>
 
 - Colorado.Enviroscreen.Score
 
