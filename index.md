@@ -1,10 +1,17 @@
 ## Welcome to the Centroid Share Site
 
-This resource is available to host temporary content so we don't have to upload and email files to each other.
+This resource is available to host temporary content.
 
-Please direct any questions to dan at carverd@colostate.edu
+Please direct any questions to Dan at carverd@colostate.edu
+
 
 ## Active Project Material
+
+### Vitis
+Species maps can be found [here](https://geospatialcentroid.github.io/vitis/content)
+
+
+## Inactive Project Material
 
 ### Enviroscreen
 
