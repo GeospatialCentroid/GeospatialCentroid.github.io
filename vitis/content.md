@@ -5,42 +5,20 @@
 Draft versions of species level data
 
 ## Maps
-Current version 2023-06-14
+Current version 2023-06-21
 
-<a href="https://geospatialcentroid.github.io/vitis/vitisRupestris_20230526.html" target="_blank">vitis rupestris</a>
+<a href="https://geospatialcentroid.github.io/vitis/Vitis aestivalis_2023-06-21.html" target="_blank">Vitis aestivalis</a>
 
+<a href="https://geospatialcentroid.github.io/vitis/Vitis palmata_2023-06-21.html" target="_blank">Vitis palmata</a>
 
-## Review
-Please provide all comments on the  <a href="https://docs.google.com/document/d/1spdqLdyO7Yq3-OR9cIsTSPYNR1Vj9zFjoAHYo8gqZ94/edit?usp=sharing" target="_blank">shared doc</a>
+<a href="https://geospatialcentroid.github.io/vitis/Vitis riparia_2023-06-21.html" target="_blank">Vitis riparia</a>
 
+<a href="https://geospatialcentroid.github.io/vitis/Vitis rotundifolia_2023-06-21.html" target="_blank">Vitis rotundifolia</a>
 
+<a href="https://geospatialcentroid.github.io/vitis/Vitis rupestris_2023-06-21.html" target="_blank">Vitis rupestris</a>
 
-#### County
+<a href="https://geospatialcentroid.github.io/vitis/Vitis shuttleworthii_2023-06-21.html" target="_blank">Vitis shuttleworthii</a>
 
-<a href="https://geospatialcentroid.github.io/enviroscreen/countyMap.html" target="_blank">map</a>
+<a href="https://geospatialcentroid.github.io/vitis/Vitis vinifera_2023-06-21.html" target="_blank">Vitis vinifera</a>
 
-- ozone
-
-#### Census Tract  
-
-<a href="https://geospatialcentroid.github.io/enviroscreen/censusTractMap.html" target="_blank">map</a>
-
-- Colorado.Enviroscreen.Score
-
-#### Census Block Groups
-
-<a href="https://geospatialcentroid.github.io/enviroscreen/censusBlockGroupMap.html" target="_blank">map</a>
-
-- Colorado.Enviroscreen.Score
-
-# Older Content
-
-
-## Data for all map features
-
-The tables visualized here will function similarly to those in the shiny application.
-*note: the tremendous width of the table is something that will be addressed.*
-
-I'm experimenting with the download functionality and I can provide the original data file if needed.
-
-[data tables](https://geospatialcentroid.github.io/enviroscreen/generateScoreTables.html)
+<a href="https://geospatialcentroid.github.io/vitis/Vitis vulpina_2023-06-21.html" target="_blank">Vitis vulpinas</a>
