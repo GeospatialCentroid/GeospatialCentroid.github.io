@@ -5,7 +5,7 @@
 Draft versions of species level data
 
 ## Maps
-Current version 2023-06-28 
+Current version 2023-07-10 
 
 <!--
  <a href="https://geospatialcentroid.github.io/vitis/Vitis aestivalis.html" target="_blank">Vitis aestivalis</a>
