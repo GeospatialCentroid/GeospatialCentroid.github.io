@@ -4,7 +4,20 @@
 
 Draft versions of species level data
 
-## Maps
+## Summary Evaluations and New maps 
+Current version 2023-07-17
+
+<a href="https://geospatialcentroid.github.io/vitis/Vitis shuttleworthii_Evaluation.html" target="_blank">Vitis shuttleworthii</a>
+
+<a href="https://geospatialcentroid.github.io/vitis/Vitis palmata_Evaluation.html" target="_blank">Vitis palmata</a>
+
+<a href="https://geospatialcentroid.github.io/vitis/Vitis rotundifolia_Evaluation.html" target="_blank">Vitis rotundifolia</a>
+
+<a href="https://geospatialcentroid.github.io/vitis/Vitis rupestris_Evaluation.html" target="_blank">Vitis
+
+
+
+## Maps Only 
 Current version 2023-07-10 
 
 <!--
