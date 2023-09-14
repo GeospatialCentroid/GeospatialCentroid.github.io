@@ -6,7 +6,7 @@ Draft versions of species distribution with occurances data
 
 
 ## Model Summary Documents
-*Current version** : 2023-07-13
+*Current version** : 2023-09-14
 
 > Contains model results, map visualizations, and conservation assessment statistics
 
