@@ -5,9 +5,10 @@
 Draft versions of species level data
 
 ## Summary Evaluations 
-Current version 2023-09-07
+Current version 2023-09-20
 
 - Included a layer showing the three county only data source (USDA Plants, Bonap, and Nature Serve). 
+- included layers with no spatial data but direct county reference
 
 <a href="https://geospatialcentroid.github.io/vitis/Vitis shuttleworthii_Evaluation.html" target="_blank">Vitis shuttleworthii</a>
 
