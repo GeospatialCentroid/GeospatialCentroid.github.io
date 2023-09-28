@@ -1,11 +1,9 @@
-# Vitis share site
+# Daucus share site
 
 ## Current Content
 
-Draft versions of species distribution with occurances data 
-
 ## Summary of the run
-*Current version** : 2023-09-28
+*Current version* : 2023-09-28
 
 <a href="https://geospatialcentroid.github.io/Daucus/test1_Summary.html" target="_blank">Run Summary</a>
 
