@@ -4,9 +4,14 @@
 
 Draft versions of species distribution with occurances data 
 
+## Summary of the run
+*Current version** : 2023-09-28
+
+<a href="https://geospatialcentroid.github.io/Daucus/test1_Summary.html" target="_blank">Run Summary</a>
+
 
 ## Model Summary Documents
-*Current version** : 2023-09-14
+*Current version** : 2023-09-28
 
 > Contains model results, map visualizations, and conservation assessment statistics
 
