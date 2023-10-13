@@ -4,6 +4,25 @@
 
 Draft versions of species level data
 
+## Distribuiton model Summaries 
+
+### Run Summary 
+
+Includes a figure and species richness map for all species currently modeled. 
+
+<a href="https://geospatialcentroid.github.io/vitis/test1_Summary.html" target="_blank"> Run Summary </a>    
+
+
+### Species level summary 
+
+<a href="https://geospatialcentroid.github.io/vitis/Vitis palmata_Summary.html" target="_blank"> Vitis palmata </a>    
+
+<a href="https://geospatialcentroid.github.io/vitis/Vitis rupestris_Summary.html" target="_blank"> Vitis rupestris </a>    
+
+<a href="https://geospatialcentroid.github.io/vitis/Vitis shuttleworthii_Summary.html" target="_blank"> Vitis shuttleworthii </a>    
+
+
+
 ## Summary Evaluations 
 Current version 2023-10-04
 
