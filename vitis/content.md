@@ -12,7 +12,6 @@ Includes a figure and species richness map for all species currently modeled.
 
 <a href="https://geospatialcentroid.github.io/vitis/test1_Summary.html" target="_blank"> Run Summary </a>    
 
-
 ### Species level summary 
 
 <a href="https://geospatialcentroid.github.io/vitis/Vitis palmata_Summary.html" target="_blank"> Vitis palmata </a>    
