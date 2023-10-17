@@ -1,8 +1,29 @@
-# Vitis share site
+# Vitis 
 
-## Current Content
+.column {
+  float: left;
+  width: 50%;
+}
 
-Draft versions of species level data
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+<div class="row">
+  <div class="column">
+  <b style="font-size:30px">County Level Maps</b>
+  <h3> Combined Summary </h3>
+  <p> Includes a figure and species richness map for all species currently modeled. </p>
+  </div>
+  <div class="column">
+  
+  </div>
+</div> 
+
+
 
 ## Distribuiton model Summaries 
 
