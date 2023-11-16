@@ -5,7 +5,7 @@
 ## Summary of the run
 *Current version* : 2023-10-27
 
-<a href="https://geospatialcentroid.github.io/Daucus/test1_Summary.html" target="_blank">Run Summary</a>
+<a href="https://geospatialcentroid.github.io/Daucus/run20231114_Summary.html" target="_blank">Run Summary</a>
 
 
 ## Model Summary Documents
@@ -18,7 +18,6 @@
 
 <a href="https://geospatialcentroid.github.io/Daucus/Daucus_aureus_Summary.html" target="_blank">D. aureus</a>
 
-<!--
 <a href="https://geospatialcentroid.github.io/Daucus/Daucus_carota_subsp._capillifolius_Summary.html" target="_blank">D. carota subsp. capillifolius</a>
 
 <a href="https://geospatialcentroid.github.io/Daucus/Daucus_carota_subsp._gummifer_Summary.html" target="_blank">D. gummifer</a>
@@ -26,4 +25,3 @@
 <a href="https://geospatialcentroid.github.io/Daucus/Daucus_syrticus_Summary.html" target="_blank">D. syrticus</a>
 
 <a href="https://geospatialcentroid.github.io/Daucus/Daucus_sahariensis_Summary.html" target="_blank">D. sahariensis</a>
--->
