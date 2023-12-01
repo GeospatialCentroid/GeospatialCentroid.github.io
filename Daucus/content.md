@@ -3,7 +3,7 @@
 ## Current Content
 
 ## Summary of the run
-*Current version* : 2023-10-27
+*Current version* : 2023-11-30
 
 <a href="https://geospatialcentroid.github.io/Daucus/run20231114_Summary.html" target="_blank">Run Summary</a>
 
@@ -12,7 +12,7 @@
 
 
 
-*Current version** : 2023-11-14
+*Current version** : 2023-11-30
 
 > Contains model results, map visualizations, and conservation assessment statistics
 
