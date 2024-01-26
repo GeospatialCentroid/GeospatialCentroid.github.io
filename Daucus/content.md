@@ -23,7 +23,7 @@
 
 **box plots** 
 
-The boxplots currently show 5 species. this will be expanded onces we get some feedback on the look/strucutre. 
+The boxplots currently show 6 species. this will be expanded onces we get some feedback on the look/strucutre. 
 *note* : I'll probably be spliting them into two figures again, like the figure on the run summary as 40+ rows on the y axis gets to be a little bit too much for the visualization. 
 
 <a href="https://geospatialcentroid.github.io/Daucus/run20240104_boxPlotSummary.html" target="_blank">Run Summary</a>
