@@ -34,7 +34,7 @@ The boxplots currently show 5 species. this will be expanded onces we get some f
 
 
 
-*Current version** : 2024-01-25
+*Current version** : 2024-01-26
 
 Major text edits and updates. Improved visualizations of ERS map elements. New table summarizing the model parameters. Lots of tidying up... 
 
