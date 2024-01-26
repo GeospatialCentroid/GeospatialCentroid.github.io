@@ -12,7 +12,9 @@
 
 
 
-*Current version** : 2024-01-04
+*Current version** : 2024-01-25
+
+Major text edits and updates. Improved visualizations of ERS map elements. New table summarizing the model parameters. Lots of tidying up... 
 
 > Contains model results, map visualizations, and conservation assessment statistics
 
