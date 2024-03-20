@@ -8,7 +8,7 @@ Please direct any questions to Dan at carverd@colostate.edu
 ## Active Project Material
 
 ### Vitis
-Species maps can be found [here](https://geospatialcentroid.github.io/vitis/content)
+Species maps can be found [here](https://geospatialcentroid.github.io/vitis/home)
 
 ### Daucus 
 Examples model run data can be found [here](https://geospatialcentroid.github.io/Daucus/content)
