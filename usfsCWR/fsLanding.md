@@ -21,7 +21,7 @@ PAD-US dataset was used as a spatial reference for all USFS lands. These were se
 - [spatial join observation data and between USFS lands](https://drive.google.com/file/d/1rlXn9ADJIeEbIk0JBv5PlrpmGkVNJ0WC/view?usp=sharing) (Wilderness and National Forest only)
 
 
-#### [Map of all Occurrences in US Service Lands](https://geospatialcentroid.github.io/fsLanding/fsPointWildernessNF.html)
+#### [Map of all Occurrences in US Service Lands](https://geospatialcentroid.github.io/usfsCWR/fsPointWildernessNF.html)
 
 
 ### Evaluation of Species Distribution Models 
@@ -30,6 +30,5 @@ PAD-US dataset was used as a spatial reference for all USFS lands. These were se
 **Reference datasets**
 - [spatial join between distribution models and USFS lands](https://drive.google.com/file/d/12In8I6C8KqNIf91W8LHnGws12pIiS28k/view?usp=sharing) (Wilderness and National Forest only)
 
-#### [Map of all Occurrences in US Service Lands](https://geospatialcentroid.github.io/fsLanding/fsrastersWildernessNF.
-
+#### [Map of all Occurrences in US Service Lands](https://geospatialcentroid.github.io/usfsCWR/fsrastersWildernessNF)
 

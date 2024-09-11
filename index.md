@@ -9,7 +9,7 @@ Please direct any questions to Dan at carverd@colostate.edu
 
 ### USFS and Crop Wild Relatative 
 
-- [Initial map of localities](https://geospatialcentroid.github.io/usfsCWR/fsMap.html) 
+- [CWR 2024 conference material ](https://geospatialcentroid.github.io/usfsCWR/fsLanding.html) 
 
 
 
