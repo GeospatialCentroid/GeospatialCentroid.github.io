@@ -1,7 +1,58 @@
 
 ## Crop Wild Relative on US Forest Service lands
 
-*Updated* : 2024-09-11 
+*Updated* : 2025-02-7
+
+Significant overhall to the workflow with the specific aims of 
+
+1. Utilize the USFS datasets to organize information 
+  - layer 1 : Admin layer (112 unique areas)
+  - level 2 : PADUS Fee Areas  (276)
+  - level 3a : Wilderness Areas (451)
+  - level 3b : Botnaical Areas (46)
+
+2. Summarize the total number of species predicted and observed at these areas 
+  - predicted : at least a single cell of a habitat suitability model in within the area boundary for a species 
+  - observed : at least a single point observation for a specific is found within the area boundary 
+  
+  
+## Maps 
+
+There are quite a few way to showcase these relationship currently were showing four. 
+ 
+ - total taxon (predicted and observed)
+ - total taxon observed
+ - total taxon predicted 
+ - density of observed taxon 
+
+### [Total taxon predicted and observed](https://geospatialcentroid.github.io/usfsCWR/totalObsPerCell.html)
+
+This map looks at the unique taxon between the prediction and observed datas and provides a full list. This will be the highest number of species of any map. 
+All four layers are present and the an additional point layer datasets is added for botanical areas for ease of reference. 
+
+### [Total taxon observed](https://geospatialcentroid.github.io/usfsCWR/totalObservered.html)
+
+This map highlights the number of unique taxon observed within each geography. 
+
+### [Total taxon predicted](https://geospatialcentroid.github.io/usfsCWR/totalPredicted.html)
+
+This map highlights the number of unique taxon predicted within each geography. 
+
+### [Total observation per cell](https://geospatialcentroid.github.io/usfsCWR/totalObsPerCell.html)
+
+This map highlights showcase the density of sampling within a region. The values on the map represent the number of occurrences, which is different then previous maps that show the number of species. 
+This is a more ganular way to look the distribution of collecting with in the region. Only the admin layer is present on the map as this layer encompasses the spatial extent of all other features.
+
+
+
+
+
+
+
+
+
+
+## Material for 2024 CWR conference 
 
 This work aims to develop a national inventory of crop wild relatives and wild utilized species on USFS lands based on previously published data.
 
