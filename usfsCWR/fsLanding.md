@@ -25,7 +25,7 @@ There are quite a few way to showcase these relationship currently were showing 
  - total taxon predicted 
  - density of observed taxon 
 
-### [Total taxon predicted and observed](https://geospatialcentroid.github.io/usfsCWR/totalObsPerCell.html)
+### [Total taxon predicted and observed](https://geospatialcentroid.github.io/usfsCWR/uniqueTaxa.html)
 
 This map looks at the unique taxon between the prediction and observed datas and provides a full list. This will be the highest number of species of any map. 
 All four layers are present and the an additional point layer datasets is added for botanical areas for ease of reference. 

@@ -7,10 +7,9 @@ Please direct any questions to Dan at carverd@colostate.edu
 
 ## Active Project Material
 
-### USFS and Crop Wild Relatative 
+### [USFS and Crop Wild Relatative](https://geospatialcentroid.github.io/usfsCWR/fsLanding.html) 
 
-- [CWR 2024 conference material ](https://geospatialcentroid.github.io/usfsCWR/fsLanding.html) 
-
+  - Location for evaluation the crop wild relatives on United States Forest Service lands.  
 
 
 ### Vitis
