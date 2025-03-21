@@ -409,7 +409,7 @@ margin-left:-15px;
 }
 .leaflet-popup-content-wrapper{
 
- height: 120px;
+ height: 180px;
   width: 250px;
 }
 .leaflet-popup-content {
@@ -1107,6 +1107,8 @@ Cards
     background-color: rgba(0,0,0,.5);
     width:100%;
     padding-left:15px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
 }
 .left_icon{
   position: absolute;
@@ -1137,7 +1139,7 @@ Cards
   }
 }
 
-.custom_class{
-    background-image: linear-gradient(#bc80bd, #fb8072);
+.total_results{
+    font-weight:normal;
 
 }

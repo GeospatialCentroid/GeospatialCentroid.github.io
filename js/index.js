@@ -29,10 +29,15 @@ $( function() {
 function change_view(type){
     view_type=type
     // redraw the view
-    filter_manager.show_results()
+    filter_manager.show_sorted_results(filter_manager.showing_id)
 }
 
 function initialize_interface(){
+    var sort_str=""
+    if(!$.isEmptyObject(usp) && usp.get("sort")){
+        sort_str=usp.get("sort")
+    }
+
    setup_params()
    setup_map();
    setup_filters()

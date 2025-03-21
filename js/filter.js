@@ -31,6 +31,8 @@ class Filter_Manager {
     // a dictionary of all the filters set
     this.filters={}
     this.progress_interval;
+
+    this._sort_col=properties.title_col
    }
   init() {
     var $this=this
@@ -581,6 +583,10 @@ class Filter_Manager {
         this.add_filter_watcher();
         layer_manager.create_geojson(subset,this.location,this.category,this.category_color,this.popup_properties)
 
+         this.subset_data=subset
+         this.show_sorted_results(subset)
+         //update counts
+         this.update_results_info(this.subset_data.length)
     }
 
     populate_search(data){
@@ -623,30 +629,9 @@ class Filter_Manager {
             }
         })
 
-      this.show_results()
 
-      //update counts
-      this.update_results_info(this.subset_data.length)
     }
-    list_results(parent_id){
-        var $this = this
-        //set initial variables
-        $this.showing_id=parent_id;
-        $this.filters={};// reset filters
 
-
-
-        $this.section_manager.slide_position("results");
-        //move to the results panel and list all the items
-        // each items visibility is stored in the filter manager - if showing
-
-        var items_showing=$this.section_manager.json_data[parent_id].items_showing
-        var data = $this.section_manager.get_match('section_id_'+parent_id)
-        $this.generate_filters(data,$this.section_manager.json_data[parent_id].filter_cols)
-        $this.add_filter_watcher();
-        var title_col=$this.section_manager.json_data[parent_id]["title_col"]
-        $this.sort_data(data,title_col)
-    }
     show_sorted_results(parent_id){
        //take the subset and short by title
         console.log("show shorted results")
@@ -658,7 +643,7 @@ class Filter_Manager {
     sort_data(data,sort_col){
         if(!sort_col){
             // use the default if none is provided
-            sort_col="_sort_col"
+            sort_col=this._sort_col
         }
 
         var sort_dir=$('#list_sort').val()
@@ -680,78 +665,79 @@ class Filter_Manager {
         }else{
             this.show_results_grid(sorted_data)
         }
+         $("#results_view").scrollTop();
     }
 
     show_results_list(sorted_data){
+     var category=this.category[0]
      // loop over the subset of items and create entries in the 'results_view'
         var html='<div class="accordion accordion-flush list-group" id="accordion_flush">'
-        for (var s in this.subset_data){
-            var id = this.subset_data[s].value
+
+        for (var i=0;i<sorted_data.length;i++){
+            var s = sorted_data[i]
+
+            var id = s.id
             var badges=""
             // for all the categories, create a badge for the same color
-            for (var c in this.subset_data[s].category){
-                var color=this.category_color[this.subset_data[s].category[c]]
-                badges+='<span class="badge rounded-pill mb-1" style="background-color:'+color+'" >'+this.subset_data[s].category[c]+'</span>'
+            for (var c in s[category]){
+
+                var color=this.category_color[s[category][c]]
+                badges+='<span class="badge rounded-pill mb-1" style="background-color:'+color+'" >'+s[category][c]+'</span>'
             }
             var text= this.get_details(this.get_match(id))
-            text+="<br/>"+"<a href='javascript:layer_manager.zoom_marker(\""+id+"\");javascript:map_manager.scroll_to_map();'>Zoom to Location</a><br/>"
+            if(s[this.location]!=''){
+                text+="<br/>"+"<a href='javascript:layer_manager.zoom_marker(\""+id+"\");javascript:map_manager.scroll_to_map();'>Zoom to Location</a><br/>"
+            }
 
-
-            html+=' <div class="accordion-item  list-group-item  list-group-item-action">'
+            html+= ' <div class="accordion-item  list-group-item  list-group-item-action">'
             html+= ' <h2 class="accordion-header" id="flush-heading'+id+'">'
-            html+=  ' <button class="accordion-button collapsed d-flex justify-content-between" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse'+id+'" aria-expanded="false" aria-controls="flush-collapse'+id+'">'
-            html+= this.subset_data[s].label+"<sup >"+badges+"</sup>"
-            html+=   '</button>'
+            html+= ' <button class="accordion-button collapsed d-flex justify-content-between" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse'+id+'" aria-expanded="false" aria-controls="flush-collapse'+id+'">'
+            html+=  s.title+"<sup >"+badges+"</sup>"
+            html+=  '</button>'
             html+='</h2>'
-            html+=' <div id="flush-collapse'+id+'" class="accordion-collapse collapse" aria-labelledby="flush-heading'+id+'" >'//data-bs-parent="#accordion_flush"// to collapse other when opened
+            html+=' <div id="flush-collapse'+id+'" class="accordion-collapse collapse" aria-labelledby="flush-heading'+id+'" >'//data-bs-parent="#accordion_flush"// to collapse others when opened
             html+=  '<div class="accordion-body wrap_word">'+text
             html+=  '</div></div></div>'
         }
         html+="</div>"//"</ul>"
 
          $("#results_view").html(html)
-         $("#results_view").scrollTop()
+
+
     }
-  show_results_grid(){
+  show_results_grid(sorted_data){
     $("#results_view").html("")
     var html=""
     var card_container=document.getElementById("results_view");
         var i=0
-        for (var s in this.subset_data){
-            var id = this.subset_data[s].value
+         for (var i=0;i<sorted_data.length;i++){
+           var s = sorted_data[i]
+            var id = s.id
              var m=this.get_match(id)
           var title=m["title"]
           var description=m["short_desc"]
 
-                html += '<div class="flip-card" style="--animation-order: '+(i+1)+';">'
-                html += ' <div class="flip-card-inner">'
-                html += '<div class="flip-card-front" style=\"background-image: url(\''+m["image"]+'\');">'
+                html += '<div class="flip-card">'
+                html += ' <div class="flip-card-inner" title="'+m["image"]+'">'
+                html += '<div class="flip-card-front">'
                 html +='<div class="flip-card-bottom-text card_click">'+title+'</div>'
                 html += ' </div>'
                 html += '<div class="flip-card-back">'
 
                 html+=description
                 if(m["github_url"]!=""){
-                    html+='<div class="icon left_icon"><a href="'+m["github_url"]+'" target="_black"><img style="width:15px;" src="images/github-mark-white.svg"</a></div>'
+                    html+='<div class="icon left_icon"><a href="'+s["github_url"]+'" target="_black"><img style="width:15px;" src="images/github-mark-white.svg"</a></div>'
                 }
                 if(m["project_url"]!=""){
-                    html+='<div class="icon right_icon"><a href="'+m["project_url"]+'" target="_black"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#000" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/><path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/></svg></a></div>'
+                    html+='<div class="icon right_icon"><a href="'+s["project_url"]+'" target="_black"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#000" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/><path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/></svg></a></div>'
                 }
                 html += ' </div>'
                 html += ' </div>'
                 html += ' </div>'
-
-//            html += '<div class="card  ">'//" style="--animation-order: '+(i+1)+';">
-//             html+='<div class="card_inner"><div class="card_face card_face--front card_click" >
-//             html+=	'<div class="card_face card_face--back "><div class="card_content card_click">'
-//
-//           //             html+= '</div>'+'</div>'
-//             html+=	'</div>'
 
             i++;
         }
         $("#results_view").html( '<div class="grid">'+html+'</div>')
-         $("#results_view").scrollTop()
 
          //set-up animation
          const cards = document.querySelectorAll(".flip-card-inner");
@@ -760,15 +746,17 @@ class Filter_Manager {
           entries.forEach(entry => {
             entry.target.parentElement
             if (entry.isIntersecting) {
+
+              // add the animation
               entry.target.parentElement.classList.add('flip-card-animation');
+              // load the image
+              $(entry.target).children().first().css("background-image","url('"+$(entry.target).attr('title')+"')")
               return; // if we added the class, exit the function
             }
-            // We're not intersecting, so remove the class!
-           // entry.target.parentElement.classList.remove('flip-card-animation');
           });
         });
-
-        // inspired by https://github.com/TylerPottsDev/card-flip
+//
+//        // inspired by https://github.com/TylerPottsDev/card-flip
         cards.forEach(card => {
             card.addEventListener("click", function (e) {
               if(event.target.classList.contains("card_click")){
