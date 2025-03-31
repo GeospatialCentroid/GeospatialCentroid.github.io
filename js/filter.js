@@ -634,7 +634,6 @@ class Filter_Manager {
 
     show_sorted_results(parent_id){
        //take the subset and short by title
-        console.log("show shorted results")
         if(!this.subset_data){
             this.subset_data=this.section_manager.json_data[parent_id].all_data
         }
@@ -684,19 +683,17 @@ class Filter_Manager {
                 var color=this.category_color[s[category][c]]
                 badges+='<span class="badge rounded-pill mb-1" style="background-color:'+color+'" >'+s[category][c]+'</span>'
             }
-            var text= this.get_details(this.get_match(id))
-            if(s[this.location]!=''){
-                text+="<br/>"+"<a href='javascript:layer_manager.zoom_marker(\""+id+"\");javascript:map_manager.scroll_to_map();'>Zoom to Location</a><br/>"
-            }
+
 
             html+= ' <div class="accordion-item  list-group-item  list-group-item-action">'
-            html+= ' <h2 class="accordion-header" id="flush-heading'+id+'">'
+            html+= ' <h2 class="accordion-header" id="flush-heading'+id+'" onclick="filter_manager.show_details(\''+id+'\')">'
             html+= ' <button class="accordion-button collapsed d-flex justify-content-between" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse'+id+'" aria-expanded="false" aria-controls="flush-collapse'+id+'">'
             html+=  s.title+"<sup >"+badges+"</sup>"
             html+=  '</button>'
             html+='</h2>'
             html+=' <div id="flush-collapse'+id+'" class="accordion-collapse collapse" aria-labelledby="flush-heading'+id+'" >'//data-bs-parent="#accordion_flush"// to collapse others when opened
-            html+=  '<div class="accordion-body wrap_word">'+text
+            html+=  '<div class="accordion-body wrap_word" id="flush-body'+id+'">'
+
             html+=  '</div></div></div>'
         }
         html+="</div>"//"</ul>"
@@ -705,6 +702,7 @@ class Filter_Manager {
 
 
     }
+
   show_results_grid(sorted_data){
     $("#results_view").html("")
     var html=""
@@ -768,6 +766,14 @@ class Filter_Manager {
 
     }
   show_details(id){
+        //to allow avoid loading all the images, have the item details get populated when the user opens the accordion button
+         var m = this.get_match(id)
+         var html= this.get_details(m)
+         if(m[this.location]!=''){
+              html+="<br/>"+"<a href='javascript:layer_manager.zoom_marker(\""+id+"\");javascript:map_manager.scroll_to_map();'>Zoom to Location</a><br/>"
+         }
+         $("#flush-body"+id).html(html)
+
         $("#flush-collapse"+id).removeClass("collapse");
         $("#results").scrollTo("#flush-heading"+id);
         $('html, body').scrollTo("#results",100);
@@ -993,7 +999,7 @@ class Filter_Manager {
         // clears the form
         $('.slider-range').each(function(){
           var options = $(this).slider( 'option' );
-          //$(this).slider( 'values', [ options.min, options.max ] );
+          $(this).slider( 'values', [ options.min, options.max ] );
         });
        $(".form-check-input").prop('checked', false);
        this.filters={}
@@ -1066,7 +1072,7 @@ class Filter_Manager {
         $("#"+id+'_slider').each(function(){
           var options = $(this).slider( 'option' );
 
-        // $(this).slider( 'values', [ options.min, options.max ] );
+        $(this).slider( 'values', [ options.min, options.max ] );
         });
 
   }
