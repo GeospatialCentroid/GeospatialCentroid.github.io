@@ -7,6 +7,9 @@ var map_manager;
 var layer_manager;
 var analytics_manager;
 var view_type='list'//'grid'//
+var alias={
+    "title":"Title","short_desc":"Description",	"year":"Year","image":"","github_url":"GitHub",	"project_url":"URL","Type":"Type"
+}
 
 var rects;// the layer group
 var layer_rects=[]

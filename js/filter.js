@@ -829,7 +829,7 @@ class Filter_Manager {
     }
      update_results_info(num){
 
-        $(".total_results").text("Found"+" "+num)
+        $(".total_results").text(num)
         $(".spinner-border").hide();
 
 
@@ -879,11 +879,8 @@ class Filter_Manager {
         for (var i in match){
             if ($.inArray(i,this.omit_result_item)==-1){
                 var link = match[i]
-//                if ((typeof link === 'string' || link instanceof String) && link.indexOf("http")==0){
-//                   link="<a href='"+link+"' target='_blank'>"+link+"</a>"
-//                }
                 if(link!==""){
-                    html+="<span class='fw-bold'>"+i+":</span> "+String(link).img_text().hyper_text()+"<br/>"
+                    html+="<span class='fw-bold'>"+alias[i]+":</span> "+String(link).img_text().hyper_text()+"<br/>"
 
                 }
 

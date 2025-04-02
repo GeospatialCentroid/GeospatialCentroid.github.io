@@ -301,7 +301,7 @@ class Map_Manager {
          for (var p in props){
             if (p !='_id' && p !='id'){
             var val = String(props[p]).hyper_text()
-            html+="<tr><td><b>"+p+"</b></td><td>"+val+"</td></tr>"
+            html+="<tr><td><b>"+alias[p]+"</b></td><td>"+val+"</td></tr>"
             }
          }
         $("#props_table").html(html)
