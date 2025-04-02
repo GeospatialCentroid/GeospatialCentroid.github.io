@@ -707,7 +707,6 @@ class Filter_Manager {
     $("#results_view").html("")
     var html=""
     var card_container=document.getElementById("results_view");
-        var i=0
          for (var i=0;i<sorted_data.length;i++){
            var s = sorted_data[i]
             var id = s.id
@@ -733,7 +732,6 @@ class Filter_Manager {
                 html += ' </div>'
                 html += ' </div>'
 
-            i++;
         }
         $("#results_view").html( '<div class="grid">'+html+'</div>')
 
