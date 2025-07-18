@@ -105,7 +105,7 @@ class Filter_Manager {
         var temp_json=[]
          for (var i=0;i<$this.json_data.length;i++){
             if($this.json_data[i][$this.include_col]=='y'){
-                layer_manager.set_usable_links($this.json_data[i])
+                //layer_manager.set_usable_links($this.json_data[i])
                 temp_json.push($this.json_data[i])
             }
          }
