@@ -6,7 +6,7 @@ var LANG;
 var map_manager;
 var layer_manager;
 var analytics_manager;
-var view_type='list'//'grid'//
+var view_type='grid'//
 var alias={
     "title":"Title","short_desc":"Description",	"year":"Year","image":"","github_url":"GitHub",	"project_url":"URL","Type":"Type"
 }
@@ -81,7 +81,7 @@ function setup_filters(){
     filter_manager = new Filter_Manager({
         csv:"https://docs.google.com/spreadsheets/d/e/2PACX-1vQ9E5gx3mY77pB7MZl2nSg9N6BbjH2YSvFWOpbWATKOwD6TR02QDD-AVbvBbLks9YMb6Hv-BS8a7xxA/pub?gid=0&single=true&output=csv",
         omit_result_item:['id',"title","tags","geojson","CSU dept","Map extent?","CLASS","Project","Description","Contact","Department/Organization","File path","Staff"], // define which attributes not to show when a selection is made
-        omit_filter_item:['id',"geojson","image","Map extent?","title","project_url","github_url","short_desc","CLASS","Project","Description","Contact","Department/Organization","File path","Staff"],
+        omit_filter_item:['id',"show","geojson","image","Map extent?","title","project_url","github_url","short_desc","CLASS","Project","Description","Contact","Department/Organization","File path","Staff"],
         path_col:"project_url",// the url to the dataset landing page
         popup_properties:["title","short_desc"],
         title_col:"title",
