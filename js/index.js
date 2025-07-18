@@ -91,7 +91,8 @@ function setup_filters(){
         params:params['f'],
         comma_separated_col:["tags"],
         color:colors,//["Hex Value for Category (CSV)"],
-        category:["tags"]
+        category:["tags"],
+        include_col:"show"
      })
 
 
