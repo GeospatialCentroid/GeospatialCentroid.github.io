@@ -27,6 +27,37 @@ $( function() {
             LANG=data
             initialize_interface()
     });
+    $("#toggle-map").on("click", function () {
+    console.log("click")
+      const $div = $("#map_wrapper");
+      if ($div.is(":visible")) {
+        $div.hide();
+        $(this).text("Show Map");
+      } else {
+        $div.show();
+        $(this).text("Hide Map");
+        try{
+            map_manager.map.invalidateSize();
+        }catch{
+
+        }
+      }
+    });
+
+    $("#toggle-sidebar").on("click", function () {
+      const $div = $("#sidebar");
+      if ($div.is(":visible")) {
+       $div.hide();
+       $("#main").removeClass("col-md-8")
+        $(this).text("Show Sidebar");
+      } else {
+       $div.show();
+        $("#main").addClass("col-md-8")
+        $(this).text("Hide Sidebar");
+
+      }
+    });
+
 });
 
 function change_view(type){
@@ -44,6 +75,7 @@ function initialize_interface(){
    setup_params()
    setup_map();
    setup_filters()
+
 
 }
 
@@ -103,7 +135,6 @@ function setup_filters(){
 function after_filters(){
 
         analytics_manager = new Analytics_Manager();
-
 }
 
  function save_params(){
@@ -150,3 +181,4 @@ function after_filters(){
     }
 
 }
+

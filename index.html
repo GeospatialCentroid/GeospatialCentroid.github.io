@@ -57,9 +57,9 @@
 <div class="container">
     <div class="row">
         <div class="col d-flex justify-content-between">
-<!--             <span class="header_text"></span>-->
+<!--             <span class="header_text"></span>
             <div id="git_but" ><a class="btn btn-default" href="https://github.com/GeospatialCentroid/GeospatialCentroid.github.io" target="git" data-toggle="tooltip" title="Go to Git Repo" data-original-title="Go to git Repo"><i class="bi bi-github"></i></a></div>
-        </div>
+        --></div>
     </div>
     <div class="row">
         <div class="col">
@@ -70,7 +70,7 @@
     </div>
 
       <div class="row ">
-        <div class="col-md-4 " >
+        <div class="col-md-4 " id="sidebar" >
           <div id="search_panel_wrapper" class="tab_panel">
                     <div id="side_header">
 
@@ -95,19 +95,23 @@
                     </div>
                </div>
         </div>
-        <div class="col-md-8">
+        <div id="main">
             <div class="row">
                 <div class="col">
-                    <label class="form-label" >Projects Found <span class="total_results"></span></label>
+                    <label class="form-label" style=" padding-top: 10px;" >Projects Found <span class="total_results"></span></label>
                 </div>
-                <div class="col text-end">
-                     <label class="form-label" for="list_sort" id="sort-title" style="display:inline-block;">Sort:</label>
-                            <select id="list_sort">
+                <div class="col text-end d-flex align-items-center mb-3">
+                       <label for="list_sort" class="form-label me-2 mb-0">Sort by</label>
+                            <select id="list_sort" class="form-select w-auto">
 <!--                                <option value="">Default</option>-->
                                 <option value="asc">Title (A-Z)</option>
                                 <option value="desc">Title (Z-A)</option>
                             </select>
                 </div>
+                  <div class="col text-end">
+                        <button class="btn btn-primary" id="toggle-map">Show Map</button>
+                        <button class="btn btn-primary" id="toggle-sidebar">Show Sidebar</button>
+                  </div>
                  <div class="col text-end">
                     <div class="btn-group " data-toggle="buttons">
                        <input type="radio" name="options" id="option1" class="radio_item" ></span>
