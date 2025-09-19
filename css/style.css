@@ -6,7 +6,7 @@ html, body {
 
 
 body {
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+   font-family: 'Poppins', sans-serif;
     font-size: 14px;
     line-height: 1.42857143;
     color: #333;
@@ -56,20 +56,40 @@ a {
 
 .btn-primary {
     color: #fff;
-    background-color: #3A56A6;
-    border-color: #3A56A6;
+    background-color: #105456;
+    border-color: #105456;
+
+}
+
+svg{
+    fill: #105456;
+}
+.icon{
+    padding:3px;
+    padding-left:5px;
+     padding-right:5px;
+     border-radius: 3px;
+}
+.icon:hover{
+  background-color: #D9782D;
+
+}
+.icon:hover svg{
+ fill: #fff;
+  background-color: #D9782D;
+  transition: fill 0.3s ease, opacity 0.3s ease; /* Smooth transition */
 }
 
 .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
     color: #fff;
-    background-color: #0f6674;
-    border-color: #0f6674;
+    background-color: #105456;
+    border-color: #105456;
 
 }
 
 .btn-primary:hover{
-    background-color: #E76124;
-    border-color: #E76124;
+    background-color: #D9782D;
+    border-color: #D9782D;
 
 }
 
@@ -929,6 +949,7 @@ a[aria-disabled="true"] {
 }
 
  .form-label{
+         padding-top: 20px;
         display: block;
 
         padding-left: 5px;
@@ -1075,10 +1096,10 @@ Cards
 
 }
 
-.flip-card:hover .flip-card-inner {
+.flip-card:hover .flip-card-inner,
+.flip-card.is-flipped .flip-card-inner {
   transform: rotateY(180deg);
 }
-
 .flip-card-front,
 .flip-card-back {
   position: absolute;
@@ -1109,24 +1130,42 @@ Cards
     background-color: var(--light);
 }
 
-.flip-card-bottom-text {
+.flip-card-title-text {
     position: absolute;
     bottom: 0px;
     color:white;
-    background-color: rgba(0,0,0,.5);
+    background-color: rgba(0,0,0,.65);
     width:100%;
     padding-left:0px;
-    border-bottom-left-radius: 12px;
+
+    height:40px;
+}
+.flip-card-bottom-text {
+    bottom: 0px;
+       border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
 }
+.flip-card-top-text {
+    position: absolute;
+    top: 0px;
+       border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    left: 0px;
+}
+.flip-card-desc{
+    margin-top:30px;
+
+}
+
+
 .left_icon{
   position: absolute;
-  bottom: 25px;
+  bottom: 15px;
 
 }
 .right_icon{
   position: absolute;
-  bottom: 25px;
+  bottom: 15px;
   right:10px
 }
 
