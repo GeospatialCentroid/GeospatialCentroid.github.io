@@ -745,6 +745,8 @@ class Filter_Manager {
 
               // add the animation
               entry.target.parentElement.classList.add('flip-card-animation');
+
+
               // load the image
               $(entry.target).children().first().css("background-image","url('"+$(entry.target).attr('title')+"')")
               return; // if we added the class, exit the function
@@ -774,6 +776,18 @@ class Filter_Manager {
 //        // inspired by https://github.com/TylerPottsDev/card-flip
         cards.forEach(card => {
             card.addEventListener("click", function (e) {
+
+                const title = $(this)
+                    .find('.flip-card-title-text')
+                    .first()
+                    .text()
+                    .trim();
+                // track the event
+              gtag('event', 'card_clicked', {
+                title: title,
+                page_location: window.location.href
+              });
+
               if(event.target.classList.contains("card_click")){
                  card.classList.toggle('is-flipped');
               }
